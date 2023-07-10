@@ -95,7 +95,7 @@ const ProductManagementPage = (props: any) => {
             {/* <form action="" onSubmit={onHandleLogout}>
                 <button>Lượn</button>
             </form> */}\
-            <Pagination defaultCurrent={1} total={50} />
+            
         </div>
     )
 }

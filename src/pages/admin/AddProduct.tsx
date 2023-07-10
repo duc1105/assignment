@@ -98,7 +98,7 @@ const AddProductPage = (props: IProps) => {
             name="image"
             multiple
           >
-            <Button icon={<UploadOutlined />}>Upload</Button>
+            <Button className='btn btn-warning' icon={<UploadOutlined />}>Upload Image</Button>
           </Upload>
         </Form.Item>
 

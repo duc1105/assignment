@@ -16,7 +16,7 @@ const UpdateProduct = (props: any) => {
   const formRef = React.useRef<FormInstance>(null);
   const [form] = Form.useForm();
   const [categories, setCategories] = useState<ICate[]>([]);
-  const [product, setProduct] = useState<IProduct>();
+  const [product, setProduct] = useState<IProduct[]>([]);
 
   useEffect(() => {
     setProduct(props.products.find((product: IProduct) => product._id === id));

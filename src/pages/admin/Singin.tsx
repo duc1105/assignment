@@ -35,7 +35,7 @@ const Singin = (props: IProps) => {
                     <div>
                         <label className="text-wrap" >Password</label>
                     </div>
-                    <input className='w-25 p-1 rounded' type="text" onChange={onHandleChange} name="password" />
+                    <input className='w-25 p-1 rounded' type="password" onChange={onHandleChange} name="password" />
 
                 </div>
 

@@ -94,14 +94,16 @@ function App() {
       localStorage.setItem("user", JSON.stringify(data.user))
       if (data.user.role == 'admin') {
         navigate('/admin')
+        location.reload()
       } else {
         navigate('/')
       }
     }
-    ).catch(error => {
-      alert(error.response.data.message)
-    })
+      ).catch(error => {
+        alert(error.response.data.message)
+      })
   }
+ 
 
   const onHandleLogout = () => {
     localStorage.removeItem("accessToken")
